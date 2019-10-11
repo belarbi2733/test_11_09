@@ -15,6 +15,8 @@ class GumballMachineTest extends PHPUnit_Framework_TestCase
     
     
     
+    
+    
     private $intitule="ZZZ2";
     private $duree="12";
     

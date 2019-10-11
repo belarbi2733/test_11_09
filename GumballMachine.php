@@ -14,6 +14,8 @@ class GumballMachine
 	
 	
 	
+	
+	
 	function __construct()
 	{
 	    try
@@ -52,7 +54,7 @@ class GumballMachine
 	    return true;
 	    
 	}
-	
+	//bonjour
 	public function AffichageCours($etat)
 	{
 	    print("\n".$etat."\n");
