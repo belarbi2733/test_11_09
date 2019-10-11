@@ -12,6 +12,9 @@ class GumballMachineTest extends PHPUnit_Framework_TestCase
     private $date_naissance="1972-04-22";
     private $lieu_naissance="Mons";
     
+    
+    
+    
     private $intitule="ZZZ2";
     private $duree="12";
     
