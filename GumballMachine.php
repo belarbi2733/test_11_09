@@ -10,7 +10,9 @@ class GumballMachine
 	private $db_name="test";
 	private $db_user="root";
 	private $db_pass="";
-	  
+	
+	
+	
 	
 	function __construct()
 	{
