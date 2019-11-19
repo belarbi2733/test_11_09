@@ -6,14 +6,11 @@ class GumballMachine
 	private $gumballs;
 	
 	private $bdd;
+	/* Paramètre de connexion à la base de données*/
 	private $servername="localhost";
-	private $db_name="test";
-	private $db_user="root";
-	private $db_pass="";
-	
-	
-	
-	
+	private $db_name="****"; //a remplir
+	private $db_user="****"; //a remplir
+	private $db_pass="****"; //a remplir
 	
 	
 	function __construct()
@@ -27,8 +24,6 @@ class GumballMachine
 	        echo "\n New connexion";
 	        $sql="CREATE TABLE  IF NOT EXISTS cours( id INT NOT NULL AUTO_INCREMENT , intitule VARCHAR(50) NOT NULL , duree INT NOT NULL , id_prof INT NOT NULL , PRIMARY KEY (id), FOREIGN KEY (id_prof) REFERENCES prof(id)) ";
 	        $this->bdd->exec($sql);
-	        
-	        //print "Yes Dans le constructeur de BaseClass\n";
 	    }
 	    
 	    catch (Exception $e)
@@ -54,7 +49,6 @@ class GumballMachine
 	    return true;
 	    
 	}
-	//bonjour
 	public function AffichageCours($etat)
 	{
 	    print("\n".$etat."\n");
@@ -64,14 +58,13 @@ class GumballMachine
 	    {
 	        echo "* id: " . $row["id"]. " Name: " . $row["intitule"]. " Time: " . $row["duree"]. " Id Prof: " . $row["id_prof"] ."\n";
 	    }
-	    
+	    return true;
 	}
 	
 	public function InsertP($bdd, $nom, $prenom , $date_naissance,$lieu)
 	{  
 	    try 
 	    {
-	       //$bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
 	       $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	       $sql = "INSERT INTO prof (nom, prenom, date_naissance, lieu_naissance) VALUES ('$nom','$prenom', '$date_naissance','$lieu')";
 	       $bdd->exec($sql);

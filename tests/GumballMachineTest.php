@@ -6,19 +6,14 @@ require 'GumballMachine.php';
 class GumballMachineTest extends PHPUnit_Framework_TestCase
 {
     public $gumballMachineInstance;
-    
-    private $nom="XXX1";
-    private $prenom="YYY1";
-    private $date_naissance="1972-04-22";
-    private $lieu_naissance="Mons";
-    
-    
-    
-    
-    
-    
-    private $intitule="ZZZ2";
-    private $duree="12";
+    //prof
+    private $nom="x_test_tp"; // a changer
+    private $prenom="y_test_tp"; // a changer
+    private $date_naissance="0000-00-00"; // a changer
+    private $lieu_naissance="XY"; // a changer
+    // cours
+    private $intitule="***"; //a remplir
+    private $duree="***";    //a remplir
     
         
     public function setUp()
@@ -39,25 +34,23 @@ class GumballMachineTest extends PHPUnit_Framework_TestCase
     }
     public function testAffichageProfAPI()
     {
-        $this->gumballMachineInstance->AffichageProf("After Insertion of Professors");
+        /*à completer*/
     }
      
     
     public function testAffichageCoursAVI()
     {
-        $this->gumballMachineInstance->AffichageCours("Before Insertion of Courses");
+        /*à completer*/
     }
     public function testInsertC()
     {
-        $resultat=$this->gumballMachineInstance->InsertC($this->intitule,$this->duree,$this->gumballMachineInstance->GetIdP($this->nom,$this->prenom));
-        //echo $resultat."     liverpool \n";
-        $this->assertContains('good job', $resultat);
-        
+       
+        /*à completer*/
         
     }
     public function testAffichageCoursAPI()
     {
-        $this->gumballMachineInstance->AffichageCours("After Insertion of Courses");
+        /*à completer*/
     }
 
    
