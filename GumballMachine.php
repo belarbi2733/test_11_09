@@ -8,9 +8,9 @@ class GumballMachine
 	private $bdd;
 	/* Paramètre de connexion à la base de données*/
 	private $servername="localhost";
-	private $db_name="****"; //a remplir
-	private $db_user="****"; //a remplir
-	private $db_pass="****"; //a remplir
+	private $db_name="myuser1 "; //a remplir
+	private $db_user="mypassword1 "; //a remplir
+	private $db_pass="mydb1"; //a remplir
 	
 	
 	function __construct()
